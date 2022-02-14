@@ -12,6 +12,19 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
+	<div class="parent">
+		<div class="topFooter">
+			<p>About</p>
+			<p>Contact Us</p>
+			<p>Blog</p>
+			<a><i class="fa fa-facebook"></a>
+			<a><i class="fa fa-twitter"></a>
+			<a><i class="fa fa-instagram"></a>
+		</div>
+		<div class="bottomFooter">
+			<p>&copy; Bball Connection 2022</p>
+		</div>
+	</div>
 		<div class="site-info">
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
