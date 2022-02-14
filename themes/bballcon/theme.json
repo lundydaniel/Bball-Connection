@@ -20,6 +20,11 @@
                     "color": "#f4f5f5",
                     "name": "White Background",
                     "slug": "whitebg"
+                },
+                {
+                    "color": "#82ca9c",
+                    "name": "Green Button Background",
+                    "slug": "greenbtnbg"
                 }
             ]
         },

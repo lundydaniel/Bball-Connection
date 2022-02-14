@@ -21,3 +21,20 @@
 .alignfull {
     width: 100%;
 }
+
+/** Button styles for both front and backend use */
+.editor-styles-wrapper .has-whitebg-background-color {
+    border-radius: initial;
+}
+
+.has-whitebg-background-color {
+    border-radius: initial;
+}
+
+.editor-styles-wrapper .has-greenbtnbg-background-color {
+    border-radius: initial;
+}
+
+.has-greenbtnbg-background-color {
+    border-radius: initial;
+}
