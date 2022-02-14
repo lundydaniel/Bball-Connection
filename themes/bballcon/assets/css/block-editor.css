@@ -38,3 +38,7 @@
 .has-greenbtnbg-background-color {
     border-radius: initial;
 }
+
+.wp-block-media-text.is-style-spacing {
+    margin-top: 2rem;
+}
