@@ -17,9 +17,6 @@
 			<p>About</p>
 			<p>Contact Us</p>
 			<p>Blog</p>
-			<a><i class="fa fa-facebook"></a>
-			<a><i class="fa fa-twitter"></a>
-			<a><i class="fa fa-instagram"></a>
 		</div>
 		<div class="bottomFooter">
 			<p>&copy; Bball Connection 2022</p>
