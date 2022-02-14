@@ -1,0 +1,31 @@
+{
+    "$schema": "https://raw.githubusercontent.com/WordPress/gutenberg/trunk/schemas/json/theme.json",
+    "version": 2,
+    "settings": {
+        "color": {
+            "custom": false,
+            "defaultPalette": false,
+            "palette": [
+                {
+                    "color": "#4b4b4a",
+                    "name": "Charcoal",
+                    "slug": "charcoal"
+                },
+                {
+                    "color": "#f7f5f1",
+                    "name": "White Text",
+                    "slug": "whitetext"
+                },
+                {
+                    "color": "#f4f5f5",
+                    "name": "White Background",
+                    "slug": "whitebg"
+                }
+            ]
+        },
+        "layout": {
+            "contentSize": "1080px",
+            "wideSize": "1200px"
+        }
+    }
+}
