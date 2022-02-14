@@ -42,3 +42,7 @@
 .wp-block-media-text.is-style-spacing {
     margin-top: 2rem;
 }
+
+.wpforms-submit {
+    align-self: right;
+}
