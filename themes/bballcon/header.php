@@ -43,12 +43,24 @@
 
 		<nav id="site-navigation" class="main-navigation">
 			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-primary',
-					'menu_id'        => 'primary-menu',
-				)
-			);
+
+			if ( has_nav_menu( 'menu-primary' ) ) {
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-primary',
+						'menu_id'        => 'primary-menu',
+					)
+				);
+			}
+
+			if ( has_nav_menu( 'menu-secondary' ) ) {
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-secondary',
+						'menu_id'        => 'secondary-menu',
+					)
+				);
+			}
 			?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

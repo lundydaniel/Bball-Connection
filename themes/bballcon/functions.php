@@ -49,7 +49,8 @@ function bballcon_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus(
 		array(
-			'menu-primary' => esc_html__( 'Primary', 'bballcon' ),
+			'menu-primary'   => esc_html__( 'Primary', 'bballcon' ),
+			'menu-secondary' => esc_html__( 'Secondary', 'bballcon'),
 		)
 	);
 
