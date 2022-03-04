@@ -24,10 +24,33 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 /*! Bballcon Custom CSS */
 
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+.site-branding {
+    background-color: #f4f5f5;
+    display: flex;
+}
+
+.site-branding h1 {
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+.main-navigation {
+    background-color: #4b4b4a;
+}
+
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
+}
+
+.main-navigation a {
+    color: #f4f5f5;
+    text-decoration: none;
 }
 
 .entry-header {
