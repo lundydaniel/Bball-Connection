@@ -44,6 +44,15 @@
 		<nav id="site-navigation" class="main-navigation">
 			<?php
 
+			if ( has_nav_menu( 'menu-user' ) ) {
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-user',
+						'menu_id'        => 'user-menu',
+					)
+				);
+			}
+
 			if ( has_nav_menu( 'menu-primary' ) ) {
 				wp_nav_menu(
 					array(
