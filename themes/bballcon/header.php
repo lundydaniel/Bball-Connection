@@ -37,21 +37,21 @@
 			$bballcon_description = get_bloginfo( 'description', 'display', );
 			if ( $bballcon_description || is_customize_preview() ) :
 				?>
-				<p class="site-description"><?php echo $bballcon_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
+				<h1 class="site-description"><?php echo $bballcon_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></h1>
 			<?php endif; ?>
-		</div><!-- .site-branding -->
-
-		<nav id="site-navigation" class="main-navigation">
+			
 			<?php
-
-			if ( has_nav_menu( 'menu-user' ) ) {
 				wp_nav_menu(
 					array(
 						'theme_location' => 'menu-user',
 						'menu_id'        => 'user-menu',
 					)
 				);
-			}
+			?>
+		</div><!-- .site-branding -->
+
+		<nav id="site-navigation" class="main-navigation">
+			<?php
 
 			if ( has_nav_menu( 'menu-primary' ) ) {
 				wp_nav_menu(
