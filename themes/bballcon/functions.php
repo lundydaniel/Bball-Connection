@@ -52,6 +52,7 @@ function bballcon_setup() {
 			'menu-user'		 => esc_html__( 'User', 'bballcon' ),
 			'menu-primary'   => esc_html__( 'Primary', 'bballcon' ),
 			'menu-secondary' => esc_html__( 'Secondary', 'bballcon'),
+			'menu-footer'	 => esc_html__( 'Footer', 'bballcon' ),
 		)
 	);
 
