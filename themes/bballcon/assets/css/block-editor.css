@@ -42,3 +42,10 @@
 .wp-block-media-text.is-style-spacing {
     margin-top: 2rem;
 }
+
+.wp-container-3.is-style-themeoption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+}

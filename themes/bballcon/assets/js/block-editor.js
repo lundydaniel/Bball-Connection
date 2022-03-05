@@ -12,3 +12,8 @@ wp.blocks.registerBlockStyle( 'core/media-text', {
     name: 'spaceing',
     label: 'Spaceing',
 } );
+
+wp.blocks.registerBlockStyle( 'core/navigation', {
+    name: 'themeoption',
+    label: 'Theme Option',
+} );
