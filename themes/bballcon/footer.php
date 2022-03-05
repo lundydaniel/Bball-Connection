@@ -14,18 +14,22 @@
 	<footer id="colophon" class="site-footer">
 	<div class="parent">
 		<div class="topFooter">
-			<p>About</p>
-			<p>Contact Us</p>
-			<p>Blog</p>
-		</div>
-		<div class="bottomFooter">
-			<p>&copy; Bball Connection 2022</p>
+			<?php
+			if ( has_nav_menu( 'menu-footer' ) ) {
+				wp_nav_menu(
+					array(
+						'theme_location' => 'menu-footer',
+						'menu_id'        => 'footer-menu',
+					)
+				);
+			}
+			?>
 		</div>
 	</div>
-		<div class="site-info">
+		<div class="site-info bottomFooter">
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'bballcon' ), 'bballcon', '<a href="https://daniellundydev.ca">Daniel Lundy</a>' );
+				printf( esc_html__( '&copy; %1$s by %2$s.', 'bballcon' ), 'Bball Connection', '<a href="https://daniellundydev.ca">Daniel Lundy</a>' );
 				?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->

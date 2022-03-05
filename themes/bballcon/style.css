@@ -28,6 +28,8 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+
+/** Header and Header Extended Custom Styles */
 .site-branding {
     background-color: #f4f5f5;
     display: flex;
@@ -77,9 +79,58 @@ ul {
     display: none;
 }
 
+.wp-block-media-text__content h2 {
+    font-weight: 300;
+    font-size: 3rem;
+    margin-left: 10%;
+}
+
+.wp-block-media-text__content h3 {
+    font-weight: 300;
+    font-size: 2.2rem;
+    margin-left: 10%;
+}
+
 .wp-block-navigation__container {
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.3rem;
+}
+
+/** Footer Styles */
+
+.post-edit-link {
+    display: none;
+}
+
+.topFooter {
+    background-color: #f7f5f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5rem;
+    height: 50px;
+}
+
+#footer-menu a {
+    font-size: 1.2rem;
+    margin: 2rem;
+    text-decoration: none;
+    color: #4b4b4a;
+}
+
+.bottomFooter {
+    background-color: #4b4b4a;
+    color: #f4f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.bottomFooter a {
+    color: #f4f5f5;
+    text-decoration: none;
+    margin-left: 5px;
 }
