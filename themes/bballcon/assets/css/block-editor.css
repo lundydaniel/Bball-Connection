@@ -51,3 +51,9 @@
     align-items: center;
     font-size: 1.3rem;
 }
+
+/** Core Block Images spacing Styles */
+
+.wp-block-image.is-style-spacing {
+    margin-top: 2rem;
+}
