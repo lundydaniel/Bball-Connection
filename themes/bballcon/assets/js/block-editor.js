@@ -17,3 +17,8 @@ wp.blocks.registerBlockStyle( 'core/navigation', {
     name: 'themeoption',
     label: 'Theme Option',
 } );
+
+wp.blocks.registerBlockStyle( 'core/image', {
+    name: 'spacing',
+    label: 'Spacing',
+} );
