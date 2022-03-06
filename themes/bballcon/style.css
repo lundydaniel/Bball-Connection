@@ -51,6 +51,10 @@ body {
     align-items: center;
 }
 
+#user-menu.menu {
+    margin-right: 3rem;
+}
+
 #user-menu.menu a {
     color: #4b4b4a;
     font-weight: 600;
