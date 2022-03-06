@@ -158,6 +158,12 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/block-editor.php';
 
 /** 
+ * Adding Woocommerce to Custom Theme Bball Connection
+ */
+
+require get_template_directory() . '/inc/woocommerce-editor.php';
+
+/** 
  * Adding Google Fonts to Custom Theme Bball Connection
  */
 
