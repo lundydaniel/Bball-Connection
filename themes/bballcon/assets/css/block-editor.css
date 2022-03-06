@@ -6,20 +6,22 @@
     color: #4b4b4a;
 }
 
-.entry-content>* {
-    width: 1080px;
+.entry-content>*:not(.woocommerce) {
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
 }
 
+.entry-content>*.alignwide,
 .alignwide {
-    width: 1200px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
 }
 
+.entry-content>*.alignfull,
 .alignfull {
-    width: 100%;
+    max-width: 100%;
 }
 
 /** Button styles for both front and backend use */
