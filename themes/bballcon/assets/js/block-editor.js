@@ -9,8 +9,8 @@ wp.domReady( function () {
 } );
 
 wp.blocks.registerBlockStyle( 'core/media-text', {
-    name: 'spaceing',
-    label: 'Spaceing',
+    name: 'spacing',
+    label: 'Spacing',
 } );
 
 wp.blocks.registerBlockStyle( 'core/navigation', {
