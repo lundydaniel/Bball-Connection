@@ -32,5 +32,18 @@
             "contentSize": "1080px",
             "wideSize": "1200px"
         }
+    },
+    "styles": {
+        "blocks": {
+            "core/shortcode": {
+                "spacing": {
+                    "margin": {
+                        "right": "4rem",
+                        "left": "4rem",
+                        "top": "2rem"
+                    }
+                }
+            }
+        }
     }
 }
