@@ -1,7 +1,75 @@
 /*! WooCommerce style */
 
+/** Shop Page styles */
+
+.add_to_cart_button {
+    background-color: #4b4b4a !important;
+    color: #f4f5f5 !important;
+}
+
+.add_to_cart_button:hover {
+    background-color: #82ca9c !important;
+    color: #f7f5f1 !important;
+    transition: all 0.3s ease-in;
+}
+
 /** Single Product page styles */
 
 .single-product {
     margin-top: 2rem;
+}
+
+.button.wc-forward {
+    background-color: #4b4b4a !important;
+    color: #f4f5f5 !important;
+}
+
+.button.wc-forward:hover {
+    background-color: rgba(75, 75, 74, 0.7) !important;
+    color: #f7f5f1 !important;
+    transition: all 0.3s ease-in;
+}
+
+.single_add_to_cart_button {
+    background-color: #4b4b4a !important;
+    color: #f4f5f5 !important;
+}
+
+.single_add_to_cart_button:hover {
+    background-color: #82ca9c !important;
+    color: #f7f5f1 !important;
+    transition: all 0.3s ease-in;
+}
+
+/** Account Page */
+
+.woocommerce-MyAccount-navigation {
+    display: none;
+}
+
+.woocommerce-account .woocommerce-MyAccount-content {
+    float: none !important;
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: #f4f5f5;
+}
+
+.show-password-input {
+    top: 0.1em !important;
+    right: 0.1em !important;
+    background-color: #82ca9c;
+}
+
+.woocommerce-Button.button {
+    background-color: #4b4b4a !important;
+    color: #f4f5f5 !important;
+}
+
+.woocommerce-Button.button:hover {
+    background-color: #82ca9c !important;
+    color: #f7f5f1 !important;
+    transition: all 0.3s ease-in;
 }
