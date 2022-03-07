@@ -73,3 +73,42 @@
     color: #f7f5f1 !important;
     transition: all 0.3s ease-in;
 }
+
+/** Cart page */
+
+.shop_table {
+    background-color: #f4f5f5;
+}
+
+.shop_table .button {
+    background-color: #4b4b4a !important;
+    color: #f4f5f5 !important;
+}
+
+.shop_table .button:hover {
+    background-color: #82ca9c !important;
+    color: #f7f5f1 !important;
+    transition: all 0.3s ease-in;
+}
+
+.checkout-button.button {
+    background-color: #4b4b4a !important;
+    color: #f4f5f5 !important;
+}
+
+.checkout-button.button:hover {
+    background-color: #82ca9c !important;
+    color: #f7f5f1 !important;
+    transition: all 0.3s ease-in;
+}
+
+.button.wc-backward {
+    background-color: #4b4b4a !important;
+    color: #f4f5f5 !important;
+}
+
+.button.wc-backward:hover {
+    background-color: #82ca9c !important;
+    color: #f7f5f1 !important;
+    transition: all 0.3s ease-in;
+}
