@@ -68,6 +68,7 @@ function bballcon_customize_register( $wp_customize ) {
 		'label'   	  => 'Twitter',
 		'description' => 'URL for Twitter including the https://',
 		'type'        => 'url',
+		'section' 	  => 'bballcon_social_media'
 	) );
 	
 }
