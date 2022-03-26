@@ -30,6 +30,23 @@ function bballcon_customize_register( $wp_customize ) {
 			)
 		);
 	}
+
+	//*! Adding custom settings for the customizer
+	//* Adding a section for social media
+
+	$wp_customize->add_section( 'bballcon_social_media', array(
+		'title' => esc_html('Social Media', 'bballcon')
+	) );
+
+	//* Creating a setting
+	$wp_customize->add_setting( 'bballcon_facebook_url', array() );
+
+	//* Creating the control
+	$wp_customize->add_control( 'bballcon_facebook_url', array(
+		'label'   	  => 'Facebook',
+		'description' => 'URL for Facebook including the https://',
+		'section' 	  => 'bballcon_social_media'
+	) );
 }
 add_action( 'customize_register', 'bballcon_customize_register' );
 
