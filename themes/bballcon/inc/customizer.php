@@ -38,15 +38,38 @@ function bballcon_customize_register( $wp_customize ) {
 		'title' => esc_html('Social Media', 'bballcon')
 	) );
 
-	//* Creating a setting
+	//* Creating a setting for Facebook
 	$wp_customize->add_setting( 'bballcon_facebook_url', array() );
 
-	//* Creating the control
+	//* Creating the control for Facebook
 	$wp_customize->add_control( 'bballcon_facebook_url', array(
 		'label'   	  => 'Facebook',
 		'description' => 'URL for Facebook including the https://',
+		'type'        => 'url',
 		'section' 	  => 'bballcon_social_media'
 	) );
+
+	//* Creating a setting for Instagram
+	$wp_customize->add_setting( 'bballcon_instagram_url', array() );
+
+	//* Creating the control
+	$wp_customize->add_control( 'bballcon_instagram_url', array(
+		'label'   	  => 'Instagram',
+		'description' => 'URL for Instagram including the https://',
+		'type'        => 'url',
+		'section' 	  => 'bballcon_social_media'
+	) );
+
+	//* Creating a setting for Twitter
+	$wp_customize->add_setting( 'bballcon_twitter_url', array() );
+
+	//* Creating the control
+	$wp_customize->add_control( 'bballcon_twitter_url', array(
+		'label'   	  => 'Twitter',
+		'description' => 'URL for Twitter including the https://',
+		'type'        => 'url',
+	) );
+	
 }
 add_action( 'customize_register', 'bballcon_customize_register' );
 
