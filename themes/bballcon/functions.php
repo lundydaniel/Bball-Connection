@@ -171,3 +171,9 @@ function wpb_add_google_fonts() {
 	wp_enqueue_style( 'wpb-google-fonts', 'https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Smooch+Sans:wght@100&display=swa', false );
 }
 add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
+
+/** 
+ * Adding Custom post types to Theme Bball Connection
+ */
+
+require get_template_directory() . '/inc/post-types.php';
