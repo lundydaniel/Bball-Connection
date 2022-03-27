@@ -45,7 +45,7 @@ function bballcon_customize_register( $wp_customize ) {
 	) );
 	
 	//* Adding a setting */
-	$wp_customize->add_setting( 'bballcon_facebook_title', array() );
+	$wp_customize->add_setting( 'bballcon_facebook_title' );
 
 	//* Setting up the control */
 	$wp_customize->add_control( 'bballcon_facebook_title', array(
@@ -53,7 +53,7 @@ function bballcon_customize_register( $wp_customize ) {
 		'section'	=> 'bballcon_facebook_media'
 	) );
 	/* Adding a setting */
-	$wp_customize->add_setting( 'bballcon_facebook_url', array() );
+	$wp_customize->add_setting( 'bballcon_facebook_url' );
 
 	/* Setting up the control */
 	$wp_customize->add_control( 'bballcon_facebook_url', array(
@@ -68,7 +68,7 @@ function bballcon_customize_register( $wp_customize ) {
 		'panel' => 'bballcon_social_media'
 	) );
 	/* Creating a setting */
-	$wp_customize->add_setting( 'bballcon_instagram_title', array() );
+	$wp_customize->add_setting( 'bballcon_instagram_title' );
 
 	/* Creating up the control */
 	$wp_customize->add_control( 'bballcon_instagram_title', array(
@@ -76,7 +76,7 @@ function bballcon_customize_register( $wp_customize ) {
 		'section' 	  => 'bballcon_instagram_media'
 	) );
 	/* Creating a setting */
-	$wp_customize->add_setting( 'bballcon_instagram_url', array() );
+	$wp_customize->add_setting( 'bballcon_instagram_url' );
 
 	/* Creating up the control */
 	$wp_customize->add_control( 'bballcon_instagram_url', array(
@@ -92,7 +92,7 @@ function bballcon_customize_register( $wp_customize ) {
 	) );
 
 	/* Creating a setting */
-	$wp_customize->add_setting( 'bballcon_twitter_title', array() );
+	$wp_customize->add_setting( 'bballcon_twitter_title' );
 
 	/* Creating the control */
 	$wp_customize->add_control( 'bballcon_twitter_title', array(
@@ -101,7 +101,7 @@ function bballcon_customize_register( $wp_customize ) {
 	) );
 
 	/* Creating a setting for Twitter */
-	$wp_customize->add_setting( 'bballcon_twitter_url', array() );
+	$wp_customize->add_setting( 'bballcon_twitter_url' );
 
 	/* Creating the control */
 	$wp_customize->add_control( 'bballcon_twitter_url', array(
