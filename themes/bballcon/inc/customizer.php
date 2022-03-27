@@ -31,44 +31,83 @@ function bballcon_customize_register( $wp_customize ) {
 		);
 	}
 
-	//*! Adding custom settings for the customizer
-	//* Adding a section for social media
+	//** Adding custom settings for the customizer */
+	//* Adding a panel for social media */
 
-	$wp_customize->add_section( 'bballcon_social_media', array(
-		'title' => esc_html('Social Media', 'bballcon')
+	$wp_customize->add_panel( 'bballcon_social_media', array(
+		'title' => esc_html__( 'Social Media', 'bballcon' )
 	) );
 
-	//* Creating a setting for Facebook
+	//* Creating a section for Facebook */
+	$wp_customize->add_section( 'bballcon_facebook_media', array(
+		'title' => esc_html__( 'Facebook', 'bballcon' ),
+		'panel' => 'bballcon_social_media'
+	) );
+	
+	//* Adding a setting */
+	$wp_customize->add_setting( 'bballcon_facebook_title', array() );
+
+	//* Setting up the control */
+	$wp_customize->add_control( 'bballcon_facebook_title', array(
+		'label'		=> 'Title',
+		'section'	=> 'bballcon_facebook_media'
+	) );
+	/* Adding a setting */
 	$wp_customize->add_setting( 'bballcon_facebook_url', array() );
 
-	//* Creating the control for Facebook
+	/* Setting up the control */
 	$wp_customize->add_control( 'bballcon_facebook_url', array(
-		'label'   	  => 'Facebook',
-		'description' => 'URL for Facebook including the https://',
-		'type'        => 'url',
-		'section' 	  => 'bballcon_social_media'
+		'label'		=> 'URL',
+		'type'		=> 'url',
+		'section'	=> 'bballcon_facebook_media'
 	) );
 
-	//* Creating a setting for Instagram
+	/* Creating a section for Instagram */
+	$wp_customize->add_section( 'bballcon_instagram_media', array(
+		'title' => esc_html__( 'Instagram', 'bballcon' ),
+		'panel' => 'bballcon_social_media'
+	) );
+	/* Creating a setting */
+	$wp_customize->add_setting( 'bballcon_instagram_title', array() );
+
+	/* Creating up the control */
+	$wp_customize->add_control( 'bballcon_instagram_title', array(
+		'label'   	  => 'Title',
+		'section' 	  => 'bballcon_instagram_media'
+	) );
+	/* Creating a setting */
 	$wp_customize->add_setting( 'bballcon_instagram_url', array() );
 
-	//* Creating the control
+	/* Creating up the control */
 	$wp_customize->add_control( 'bballcon_instagram_url', array(
-		'label'   	  => 'Instagram',
-		'description' => 'URL for Instagram including the https://',
+		'label'   	  => 'URL',
 		'type'        => 'url',
-		'section' 	  => 'bballcon_social_media'
+		'section' 	  => 'bballcon_instagram_media'
 	) );
 
-	//* Creating a setting for Twitter
+	/* Creating a section for Twitter */
+	$wp_customize->add_section( 'bballcon_twitter_media', array(
+		'title' => esc_html__( 'Twitter', 'bballcon' ),
+		'panel' => 'bballcon_social_media'
+	) );
+
+	/* Creating a setting */
+	$wp_customize->add_setting( 'bballcon_twitter_title', array() );
+
+	/* Creating the control */
+	$wp_customize->add_control( 'bballcon_twitter_title', array(
+		'label'   	  => 'Title',
+		'section' 	  => 'bballcon_twitter_media'
+	) );
+
+	/* Creating a setting for Twitter */
 	$wp_customize->add_setting( 'bballcon_twitter_url', array() );
 
-	//* Creating the control
+	/* Creating the control */
 	$wp_customize->add_control( 'bballcon_twitter_url', array(
-		'label'   	  => 'Twitter',
-		'description' => 'URL for Twitter including the https://',
+		'label'   	  => 'URL',
 		'type'        => 'url',
-		'section' 	  => 'bballcon_social_media'
+		'section' 	  => 'bballcon_twitter_media'
 	) );
 	
 }
