@@ -139,10 +139,19 @@ ul {
     justify-content: center;
     align-items: center;
     height: 50px;
+    letter-spacing: 2px;
 }
 
 .bottomFooter a {
     color: #f4f5f5;
     text-decoration: none;
     margin-left: 5px;
+}
+
+.bottomFooter ul {
+    margin-left: 15rem;
+}
+
+.bottomFooter li {
+    padding: 10px;
 }
