@@ -112,3 +112,16 @@
     color: #f7f5f1 !important;
     transition: all 0.3s ease-in;
 }
+
+/** Checkout Page */
+
+.button.alt {
+    background-color: #4b4b4a !important;
+    color: #f4f5f5 !important;
+}
+
+.button.alt:hover {
+    background-color: #82ca9c !important;
+    color: #f7f5f1 !important;
+    transition: all 0.3s ease-in;
+}

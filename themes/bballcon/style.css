@@ -123,6 +123,7 @@ ul {
 .topFooter {
     background-color: #f7f5f1;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top: 1.5rem;
