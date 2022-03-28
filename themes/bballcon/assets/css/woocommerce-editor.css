@@ -2,6 +2,10 @@
 
 /** Shop Page styles */
 
+.woocommerce.columns-4 {
+    margin: 1rem;
+}
+
 .add_to_cart_button {
     background-color: #4b4b4a !important;
     color: #f4f5f5 !important;
