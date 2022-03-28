@@ -42,12 +42,25 @@
 						$tip_query->the_post();
 						?>
 						<div class="custom-post-type">
+							<!-- Adding conditional statements for the post type -->
 							<?php
 							the_post_thumbnail();
-							the_title( '<h4>', '</h4>' );
-							the_excerpt();
+							if ( get_the_title() ) {
+								?>
+								<h4><?php echo get_the_title(); ?></h4>
+								<?php
+							}
+							if ( get_the_excerpt() ) {
+								?>
+								<p><?php echo get_the_excerpt(); ?></p>
+								<?php
+							}
+							if ( get_the_permalink() ) {
+								?>
+								<a href="<?php echo get_the_permalink();?>">Read article</a>
+								<?php
+							}
 							?>
-							<a href="<?php the_permalink();?>">Read article</a>
 						</div>
 						<?php
 					}
