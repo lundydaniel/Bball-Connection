@@ -53,6 +53,12 @@
 				}
 			?>
 		</div>
+	</div>
+	<!--Custom footer content -->
+
+		<div class="site-info bottomFooter">
+			<!-- Adding the menu-footer links -->
+		<div class="site-menu-footer-links">
 			<?php
 			if ( has_nav_menu( 'menu-footer' ) ) {
 				wp_nav_menu(
@@ -63,13 +69,9 @@
 				);
 			}
 			?>
-		</div>
-	</div>
-	<!--Custom footer content -->
-
-		<div class="site-info bottomFooter">
+			</div>
 			<!-- Adding the copyrite info -->
-			<div>
+			<div class="copy-info">
 				<?php
 				/* translators: 1: Theme name, 2: Theme author. */
 				printf( esc_html__( '&copy; %1$s by %2$s.', 'bballcon' ), 'Bball Connection', '<a href="https://daniellundydev.ca">Daniel Lundy</a>' );
