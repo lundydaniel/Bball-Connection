@@ -93,7 +93,7 @@
 				?>
 			</div>	
 			<!-- Adding Social Media Menu -->
-			<div>
+			<div class="social-media-links">
 				<ul>
 					<li><a href="<?php echo esc_url( get_theme_mod( 'bballcon_facebook_url' ) ); ?>"><?php echo get_theme_mod( 'bballcon_facebook_title' ); ?></a></li>
 					<li><a href="<?php echo esc_url( get_theme_mod( 'bballcon_instagram_url' ) ); ?>"><?php echo get_theme_mod( 'bballcon_instagram_title' ); ?></a></li>
