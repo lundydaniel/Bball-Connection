@@ -33,6 +33,11 @@ body {
 .site-branding {
     background-color: #f4f5f5;
     display: flex;
+    flex-direction: row;
+}
+
+.custom-logo-link {
+    margin-left: 2rem;
 }
 
 .site-description {
@@ -181,4 +186,23 @@ ul {
 
 .bottomFooter li {
     padding: 5px;
+}
+
+/*! Media queries */
+
+/** Header section */
+
+@media (max-width: 811px) {
+    .site-branding {
+        flex-direction: column;
+    }
+
+    .site-description {
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+
+    .menu-user-menu-container {
+        margin-left: 0;
+    }
 }
