@@ -91,6 +91,7 @@ ul {
     display: none;
 }
 
+/** Custom styles for wp blocks */
 
 .wp-block-media-text__content h2 {
     font-weight: 300;
@@ -137,6 +138,13 @@ ul {
 
 .custom-post-type {
     margin: 1rem;
+}
+
+.custom-post-type img {
+    display: flex;
+    margin: auto;
+    max-height: 270px;
+    width: auto;
 }
 
 /* Bottom footer */
