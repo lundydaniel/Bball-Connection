@@ -24,8 +24,9 @@
 		$tip_args = array(
 			'post_type'         => array(' bballcon_tips '), // searching for post type bbcallcon_tips
 			'post_status'       => 'publish', // searching to see if post or page is published
-			'posts_per_page'    => 4, // displaying three post
-			'orderby'			=> 'rand' //display post in random order
+			'posts_per_page'    => 3, // displaying three post
+			'orderby'			=> 'rand', //display post in random order
+			'post__not_in'		=> array( get_the_ID() ) //making it so when on the post. it does not show as an option to view
 		);
 		/**
 		 * Creating WP_Query
@@ -43,9 +44,10 @@
 						<div class="custom-post-type">
 							<?php
 							the_post_thumbnail();
-							the_title();
+							the_title( '<h4>', '</h4>' );
 							the_excerpt();
 							?>
+							<a href="<?php the_permalink();?>">Read article</a>
 						</div>
 						<?php
 					}
