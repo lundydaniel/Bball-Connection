@@ -14,6 +14,31 @@
 	<footer id="colophon" class="site-footer">
 	<div class="parent">
 		<div class="topFooter">
+
+			//* Setting up custom WP_Query for my custom post-types to be dsplay in the footer. */
+
+		<?php
+		/**
+		 * Creating arguements
+		 */
+		$tip_args = array(
+			'post_type'         => array(' bballcon_tips '), // searching for post type bbcallcon_tips
+			'post_status'       => 'publish', // searching to see if post is published
+			'posts_per_page'    => 4 // displaying three post
+		);
+		/**
+		 * Creating WP_Query
+		 */
+		$tip_query = new WP_Query( $args );
+
+		if ( $tip_query->have_posts() ) {
+			while ( $tip_query->have_posts() ) {
+				$tip_query->have_posts();
+			}
+			wp_reset_postdata();
+		}
+		?>
+
 			<?php
 			if ( has_nav_menu( 'menu-footer' ) ) {
 				wp_nav_menu(
