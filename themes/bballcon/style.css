@@ -113,6 +113,8 @@ ul {
 
 /** Footer Styles */
 
+/* Top Footer */
+
 .post-edit-link {
     display: none;
 }
@@ -123,15 +125,21 @@ ul {
     justify-content: center;
     align-items: center;
     margin-top: 1.5rem;
-    height: 50px;
+    height: auto;
 }
 
-#footer-menu a {
-    font-size: 1.2rem;
-    margin: 2rem;
-    text-decoration: none;
-    color: #4b4b4a;
+/** WP_Query styles (custom post) */
+
+.custom-post-type-container {
+    display: flex;
+    flex-direction: row;
 }
+
+.custom-post-type {
+    margin: 1rem;
+}
+
+/* Bottom footer */
 
 .bottomFooter {
     background-color: #4b4b4a;
@@ -143,14 +151,22 @@ ul {
     letter-spacing: 2px;
 }
 
+.site-menu-footer-links {
+    margin-right: auto;
+}
+
 .bottomFooter a {
     color: #f4f5f5;
     text-decoration: none;
     margin-left: 5px;
 }
 
+.copy-info {
+    margin: auto;
+}
+
 .bottomFooter ul {
-    margin-left: 15rem;
+    margin-left: auto;
 }
 
 .bottomFooter li {
