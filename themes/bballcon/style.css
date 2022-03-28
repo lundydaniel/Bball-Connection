@@ -87,9 +87,10 @@ ul {
     text-decoration: none;
 }
 
-/* .entry-header {
+.page .entry-title {
     display: none;
-} */
+}
+
 
 .wp-block-media-text__content h2 {
     font-weight: 300;
