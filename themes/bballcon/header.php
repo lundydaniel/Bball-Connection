@@ -52,7 +52,9 @@
 
 		<nav id="site-navigation" class="main-navigation">
 			<?php
-
+		/**
+		 * Adding conditional for nav menus
+		 */
 			if ( has_nav_menu( 'menu-primary' ) ) {
 				wp_nav_menu(
 					array(
@@ -61,7 +63,9 @@
 					)
 				);
 			}
-			
+			/**
+			 * Adding conditional for nav menus
+			 */
 			if ( has_nav_menu( 'menu-secondary' ) ) {
 				wp_nav_menu(
 					array(
