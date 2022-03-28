@@ -25,7 +25,7 @@ function wpdocs_kantbtrue_init() {
         'set_featured_image'    => _x( 'Set cover image', 'Overrides the “Set featured image” phrase for this post type. Added in 4.3', 'bballcon' ),
         'remove_featured_image' => _x( 'Remove cover image', 'Overrides the “Remove featured image” phrase for this post type. Added in 4.3', 'bballcon' ),
         'use_featured_image'    => _x( 'Use as cover image', 'Overrides the “Use as featured image” phrase for this post type. Added in 4.3', 'bballcon' ),
-        'archives'              => _x( 'Recipe archives', 'The post type archive label used in nav menus. Default “Post Archives”. Added in 4.4', 'bballcon' ),
+        'archives'              => _x( 'Tips archives', 'The post type archive label used in nav menus. Default “Post Archives”. Added in 4.4', 'bballcon' ),
         'insert_into_item'      => _x( 'Insert into tip', 'Overrides the “Insert into post”/”Insert into page” phrase (used when inserting media into a post). Added in 4.4', 'bballcon' ),
         'uploaded_to_this_item' => _x( 'Uploaded to this tip', 'Overrides the “Uploaded to this post”/”Uploaded to this page” phrase (used when viewing media attached to a post). Added in 4.4', 'bballcon' ),
         'filter_items_list'     => _x( 'Filter tips list', 'Screen reader text for the filter links heading on the post type listing screen. Default “Filter posts list”/”Filter pages list”. Added in 4.4', 'bballcon' ),
@@ -34,7 +34,7 @@ function wpdocs_kantbtrue_init() {
         );     
         $args = array(
         'labels'             => $labels,
-        'description'        => 'Recipe custom post type.',
+        'description'        => 'Tips custom post type.',
         'public'             => true,
         'publicly_queryable' => true,
         'show_ui'            => true,
