@@ -136,6 +136,8 @@
     transition: all 0.3s ease-in;
 }
 
+/*! Adding media query for woocommerce */
+
 @media (max-width: 770px) {
     li {
         margin: 0.3rem !important;
