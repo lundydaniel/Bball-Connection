@@ -206,3 +206,36 @@ ul {
         margin-left: 0;
     }
 }
+
+/** Main nav section queries */
+
+@media (max-width: 600px) {
+    .main-navigation {
+        max-width: 600px;
+        width: 100%;
+    }
+
+    .wp-block-media-text__content h2 {
+        text-align: center;
+        font-size: 2rem !important;
+        margin-left: 0;
+    }
+
+    .wp-block-media-text__content h3 {
+        font-size: 1.5rem !important;
+        margin-left: 0;
+    }
+}
+
+/** Mobile size */
+@media (max-width: 475px) {
+
+    .main-navigation * {
+        flex-wrap: wrap;
+    }
+
+    ul#primary-menu li {
+        font-size: 1rem;
+        margin: 0.5rem;
+    }
+}
