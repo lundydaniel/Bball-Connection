@@ -15,7 +15,7 @@
 	<div class="parent">
 		<div class="topFooter">
 
-			//* Setting up custom WP_Query for my custom post-types to be dsplay in the footer. */
+		<!-- Setting up custom WP_Query for post types to be displayed in footer -->
 
 		<?php
 		/**
@@ -23,22 +23,36 @@
 		 */
 		$tip_args = array(
 			'post_type'         => array(' bballcon_tips '), // searching for post type bbcallcon_tips
-			'post_status'       => 'publish', // searching to see if post is published
-			'posts_per_page'    => 4 // displaying three post
+			'post_status'       => 'publish', // searching to see if post or page is published
+			'posts_per_page'    => 4, // displaying three post
+			'orderby'			=> 'rand' //display post in random order
 		);
 		/**
 		 * Creating WP_Query
 		 */
-		$tip_query = new WP_Query( $args );
-
-		if ( $tip_query->have_posts() ) {
-			while ( $tip_query->have_posts() ) {
-				$tip_query->have_posts();
-			}
-			wp_reset_postdata();
-		}
+		$tip_query = new WP_Query( $tip_args );
 		?>
-
+		
+		<!-- Displaying information on screen -->
+		<div class="custom-post-type-container">
+			<?php
+				if ( $tip_query->have_posts() ) {
+					while ( $tip_query->have_posts() ) {
+						$tip_query->the_post();
+						?>
+						<div class="custom-post-type">
+							<?php
+							the_post_thumbnail();
+							the_title();
+							the_excerpt();
+							?>
+						</div>
+						<?php
+					}
+					wp_reset_postdata();
+				}
+			?>
+		</div>
 			<?php
 			if ( has_nav_menu( 'menu-footer' ) ) {
 				wp_nav_menu(
