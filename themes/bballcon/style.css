@@ -152,13 +152,13 @@ ul {
 }
 
 .site-menu-footer-links {
+    margin-left: 2.5rem;
     margin-right: auto;
 }
 
 .bottomFooter a {
     color: #f4f5f5;
     text-decoration: none;
-    margin-left: 5px;
 }
 
 .copy-info {
@@ -166,9 +166,10 @@ ul {
 }
 
 .bottomFooter ul {
+    margin-right: 2.5rem;
     margin-left: auto;
 }
 
 .bottomFooter li {
-    padding: 10px;
+    padding: 5px;
 }
