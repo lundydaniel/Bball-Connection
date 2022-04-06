@@ -12,6 +12,11 @@
                     "slug": "charcoal"
                 },
                 {
+                    "color": "#D6D6D4",
+                    "name": "Light Grey",
+                    "slug": "lightgrey"
+                },
+                {
                     "color": "#f7f5f1",
                     "name": "White Text",
                     "slug": "whitetext"
