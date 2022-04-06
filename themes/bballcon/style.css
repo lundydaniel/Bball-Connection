@@ -117,6 +117,10 @@ ul {
     font-size: 1.3rem;
 }
 
+.wp-block-image img {
+    min-height: 400px;
+}
+
 /** Footer Styles */
 
 /* Top Footer */
@@ -266,5 +270,15 @@ ul {
     ul#primary-menu li {
         font-size: 1rem;
         margin: 0.5rem;
+    }
+
+    img.custom-logo {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .custom-logo-link {
+        margin-left: 0px;
     }
 }
