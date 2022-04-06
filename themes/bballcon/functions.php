@@ -177,3 +177,12 @@ add_action( 'wp_enqueue_scripts', 'wpb_add_google_fonts' );
  */
 
 require get_template_directory() . '/inc/post-types.php';
+
+/**
+ * Hiding current version number of wordpress.
+ */
+
+function wpbeginner_remove_version() {
+return '';
+}
+add_filter('the_generator', 'wpbeginner_remove_version');
